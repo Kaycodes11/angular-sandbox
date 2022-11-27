@@ -1,0 +1,46 @@
+<!-- so whatever HTML written within the parent element will be projected here  -->
+<!-- by using the specific attribute use the required html -->
+<ng-content select="[channelName]"></ng-content>
+
+<div class="container mx-auto flex flex-col justify-center items-center gap-2">
+  <label>Write your name here: </label>
+  <!-- now send the type input from the below input field to its parent component -->
+  <input type="text" id="name" #newName />
+  <br />
+  <!-- get the value from this input field by using template reference i.e. #newName -->
+  <button
+    class="mt-4 outline bg-sky-500 gap-y-2"
+    type="button"
+    (click)="addNewName(newName.value)"
+  >
+    Now, Add your new name
+  </button>
+</div>
+
+<!-- by using the specific class use the required html -->
+<ng-content select=".desc"></ng-content>
+
+<hr class="mt-2 py-2" />
+
+<!-- one element couldn't have both structural directive like *ngFor & *ngIf  -->
+<div *ngFor="let number of numbers">
+  <ng-container *ngIf="number % 2 === 0">{{ number }}</ng-container>
+</div>
+
+<hr class="mt-2 py-2" />
+
+<ng-template [ngIf]="true">This is the content within ng-template</ng-template>
+<div *ngIf="true; else elseBlock">truthy</div>
+
+<ng-template #elseBlock>
+  <div>falsy</div>
+</ng-template>
+
+<!-- <p [ngClass]="{red: highlightColor === 'red', 'blue': highlightColor === 'blue'}"></p> -->
+<!-- <p [ngStyle]="{color: isStyleApplied  ? 'white' : 'black', backgroundColor: isStyleApplied ? true : 'green' : ''}"></p> -->
+
+<div class="flex w-24 gap-4 mt-4">
+  <p #language>Angular</p>
+  <input type="text" #myInput />
+  <button (click)="sendInput(myInput, language)">click</button>
+</div>

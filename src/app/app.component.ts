@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'atodo';
+  title = 'angular todo';
+  sendIt = 'This data is from parent';
+
+  logValueFromChild(value: string) {
+    console.info("value from the child ", value);
+  }
 }
