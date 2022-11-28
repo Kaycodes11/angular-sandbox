@@ -3,39 +3,39 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html',
-  template: `
-    <div class="row">
-      <div class="m-t-1">
-        <button class="btn btn-primary" (click)="doGET()">GET</button>
-        <button class="btn btn-primary" (click)="doPOST()">POST</button>
-        <button class="btn btn-primary" (click)="doPUT()">PUT</button>
-        <button class="btn btn-primary" (click)="doDELETE()">DELETE</button>
-      </div>
-    </div>
+  templateUrl: './app.component.html',
+  // template: `
+  //   <div class="row">
+  //     <div class="m-t-1">
+  //       <button class="btn btn-primary" (click)="doGET()">GET</button>
+  //       <button class="btn btn-primary" (click)="doPOST()">POST</button>
+  //       <button class="btn btn-primary" (click)="doPUT()">PUT</button>
+  //       <button class="btn btn-primary" (click)="doDELETE()">DELETE</button>
+  //     </div>
+  //   </div>
 
-    <div class="row">
-      <div class="m-t-1">
-        <button class="btn btn-secondary" (click)="doGETAsPromise()">
-          As Promise
-        </button>
-        <button class="btn btn-secondary" (click)="doGETAsPromiseError()">
-          Error as Promise
-        </button>
-        <button class="btn btn-secondary" (click)="doGETAsObservableError()">
-          Error as Observable
-        </button>
-      </div>
-    </div>
+  //   <div class="row">
+  //     <div class="m-t-1">
+  //       <button class="btn btn-secondary" (click)="doGETAsPromise()">
+  //         As Promise
+  //       </button>
+  //       <button class="btn btn-secondary" (click)="doGETAsPromiseError()">
+  //         Error as Promise
+  //       </button>
+  //       <button class="btn btn-secondary" (click)="doGETAsObservableError()">
+  //         Error as Observable
+  //       </button>
+  //     </div>
+  //   </div>
 
-    <div class="row">
-      <div class="m-t-1">
-        <button class="btn btn-danger" (click)="doGETWithHeaders()">
-          With Headers
-        </button>
-      </div>
-    </div>
-  `,
+  //   <div class="row">
+  //     <div class="m-t-1">
+  //       <button class="btn btn-danger" (click)="doGETWithHeaders()">
+  //         With Headers
+  //       </button>
+  //     </div>
+  //   </div>
+  // `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {

@@ -1,0 +1,18 @@
+<div class="about-page">
+  <div>
+    <div class="flex flex-col gap-2 items-center justify-center mt-2">
+      This is about page
+      <span
+        class="bg-gray-200 text-black px-10 rounded-xl center cursor-pointer"
+        (click)="goToEdit()"
+      >
+        Go to edit about page
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- to register about's own child routes use the router-outlet -->
+<!-- without this <router-outlet> the child routes of about will be unknown / unregistered within app  -->
+
+<router-outlet></router-outlet>

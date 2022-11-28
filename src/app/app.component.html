@@ -12,6 +12,10 @@
 
 <app-auth-modal></app-auth-modal>
 
-
 <!-- directive -->
 <!-- <joke-list></joke-list> -->
+
+<!-- registering the all root-level routes here : this <router-outlet> used once & mostly here -->
+<router-outlet></router-outlet>
+
+<!-- however, if any component has children routes then that component will have a router-outlet to register its own child routes -->

@@ -1,10 +1,6 @@
 <header id="header" class="bg-secondary">
   <nav class="container mx-auto flex justify-start items-center py-8 px-4">
-    <a
-      class="text-3xl text-indigo-400 font-bold uppercase mr-4"
-      href="index.html"
-      >Todo</a
-    >
+    <a class="text-3xl text-indigo-400 font-bold uppercase mr-4" routerLink="/">Todo</a>
     <div class="flex flex-grow items-center">
       <!-- Primary Navigation -->
       <ul class="flex flex-row mt-1">
@@ -15,13 +11,16 @@
           </a>
         </li>
         <li>
-          <a class="px-2" href="#">Manage</a>
+          <a class="px-2" routerLink="/customers">Customers</a>
         </li>
         <li>
-          <a class="px-2" href="#">Upload</a>
+          <a class="px-2" routerLink="/products">Products</a>
         </li>
         <li>
-          <a class="px-2" href="about.html">About</a>
+          <a class="px-2" routerLink="/orders">Orders</a>
+        </li>
+        <li>
+          <a class="px-2" routerLink="/about">About</a>
         </li>
       </ul>
     </div>
